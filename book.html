@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>홍길동 — 책 소개</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Song+Myung&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="writer.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <!-- TODO: 실제 이름으로 교체 -->
+      <a href="index.html" class="brand">홍길동</a>
+
+      <nav class="sidebar-nav">
+        <a href="writer.html">작가</a>
+        <a href="books.html">출간도서</a>
+        <a href="lecture.html">강연문의</a>
+
+        <div class="nav-group">
+          <a href="admin.html">행정사</a>
+          <div class="nav-sub">
+            <a href="admin.html">성공사례</a>
+            <a href="admin.html#consult">상담신청안내</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- TODO: 실제 이름으로 교체 -->
+    <p class="sidebar-footer">© 홍길동.<br>All rights reserved.</p>
+  </aside>
+
+  <main class="page-main">
+    <a href="books.html" class="back-link">← 출간 도서 목록</a>
+
+    <div class="book-detail" id="bookDetail">
+      <!-- JS가 아래 내용을 채웁니다 -->
+      <div class="book-detail-left">
+        <div class="book-detail-cover" id="bookCover"><span id="bookCoverLabel">불러오는 중…</span></div>
+        <a href="#" id="bookBuyLink" class="book-buy-btn" target="_blank" rel="noopener">교보문고에서 구매 <span aria-hidden="true">→</span></a>
+        <a href="#" id="bookHistoryLink" class="book-history-link" target="_blank" rel="noopener">이 책이 만들어지기까지 <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="book-detail-info">
+        <span class="page-eyebrow" id="bookYear"></span>
+        <h1 class="page-title" id="bookTitle"></h1>
+        <p class="book-detail-desc" id="bookDesc"></p>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+<script>
+  // TODO: 실제 책 정보로 교체하세요 (id는 books.html의 book-card 링크(book.html?id=)와 맞춰야 합니다)
+  const BOOKS = {
+    "1": { title: "고요한 날들", year: "2023", desc: "일상의 결을 따라가는 짧은 에세이 모음. 평범한 하루 속에서 발견한 사소하지만 오래 남는 순간들을 담았습니다.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "2": { title: "종이의 흔적", year: "2021", desc: "쓰고 지운 문장들 사이에 남은 흔적에 관한 산문집. 기록한다는 행위 자체를 돌아봅니다.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "3": { title: "행간에 머무는 사람", year: "2019", desc: "말과 말 사이, 문장과 문장 사이에 머무는 감정을 포착한 에세이.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "4": { title: "다음 책 제목", year: "2025", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "5": { title: "더미 책 제목 5", year: "2018", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "6": { title: "더미 책 제목 6", year: "2017", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "7": { title: "더미 책 제목 7", year: "2016", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "8": { title: "더미 책 제목 8", year: "2015", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "9": { title: "더미 책 제목 9", year: "2014", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "10": { title: "더미 책 제목 10", year: "2013", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
+  const book = BOOKS[id];
+
+  if (book) {
+    document.title = `홍길동 — ${book.title}`;
+    document.getElementById('bookCoverLabel').textContent = book.title;
+    document.getElementById('bookYear').textContent = book.year;
+    document.getElementById('bookTitle').textContent = book.title;
+    document.getElementById('bookDesc').textContent = book.desc;
+    // TODO: 실제 구매 링크가 있다면 교보문고 상품 URL로 직접 교체하세요.
+    document.getElementById('bookBuyLink').href =
+      'https://search.kyobobook.co.kr/search?keyword=' + encodeURIComponent(book.title);
+    // TODO: 실제 집필 히스토리 블로그 글 URL로 교체하세요.
+    document.getElementById('bookHistoryLink').href = book.historyUrl;
+  } else {
+    document.getElementById('bookCoverLabel').textContent = '책 정보를 찾을 수 없습니다';
+    document.getElementById('bookTitle').textContent = '책을 찾을 수 없습니다';
+    document.getElementById('bookDesc').textContent = '출간 도서 목록으로 돌아가 다시 선택해주세요.';
+    document.getElementById('bookBuyLink').style.display = 'none';
+    document.getElementById('bookHistoryLink').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
