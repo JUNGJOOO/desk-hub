@@ -61,16 +61,16 @@
 <script>
   // TODO: 실제 책 정보로 교체하세요 (id는 books.html의 book-card 링크(book.html?id=)와 맞춰야 합니다)
   const BOOKS = {
-    "1": { title: "고요한 날들", year: "2023", desc: "일상의 결을 따라가는 짧은 에세이 모음. 평범한 하루 속에서 발견한 사소하지만 오래 남는 순간들을 담았습니다.", historyUrl: "https://blog.naver.com/TODO/TODO" },
-    "2": { title: "종이의 흔적", year: "2021", desc: "쓰고 지운 문장들 사이에 남은 흔적에 관한 산문집. 기록한다는 행위 자체를 돌아봅니다.", historyUrl: "https://blog.naver.com/TODO/TODO" },
-    "3": { title: "행간에 머무는 사람", year: "2019", desc: "말과 말 사이, 문장과 문장 사이에 머무는 감정을 포착한 에세이.", historyUrl: "https://blog.naver.com/TODO/TODO" },
-    "4": { title: "다음 책 제목", year: "2025", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
-    "5": { title: "더미 책 제목 5", year: "2018", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
-    "6": { title: "더미 책 제목 6", year: "2017", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
-    "7": { title: "더미 책 제목 7", year: "2016", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
-    "8": { title: "더미 책 제목 8", year: "2015", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
-    "9": { title: "더미 책 제목 9", year: "2014", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
-    "10": { title: "더미 책 제목 10", year: "2013", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" }
+    "1": { title: "마음이 넓지 않은 사람이 불안을 대하는 방법", year: "2026", desc: "test", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "2": { title: "누구나 할 수 있는 일상 속 행정심판", year: "2023", desc: "test", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "3": { title: "이모작", year: "2023", desc: "test", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "4": { title: "그렇게 떠났고 다시 만났다", year: "2021", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "5": { title: "이번이 마지막 다음입니다", year: "2019", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "6": { title: "우연히 그녀의 소식을 듣게 되었다", year: "2018", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "7": { title: "그래도 당신은 아름답다", year: "2017", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "8": { title: "정당한 살인교사", year: "2016", desc: "TODO: 책 소개 문구를 입력하세요.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "9": { title: "20대, 20대에게 길을 묻다", year: "2015", desc: "[20대, 20대에게 길을 묻다]는 대학졸업과 동시에 학자금대출의 무게를 실감하게 되고, 좋은 일자리를 찾기 위해 무한의 노력을 기울여야 하는 이들에게 어떤 도움을 줄 수 있을까를 고민한 결과를 책에 담았다. 저자는 동시대를 사는 같은 20대로서 현실적이고 실질적인 조언을 주기 위해 이미 성공한 사람들이 아닌, 현재 성공을 꿈꾸고 성공을 위해 노력하고 있는 젊은이들의 목소리를 책에 담고 있다.", historyUrl: "https://blog.naver.com/TODO/TODO" },
+    "10": { title: "백만 원으로 호주 워킹홀리데이 다녀오기", year: "2014", desc: "이력서를 구성하는 방법부터 필수적으로 들어가야 하는 내용을 쓰는 방법 및 이를 어필 할 수 있는 방법들까지 최대한 자세히 하나하나 풀어가듯 서술했다. 또한 일을 구하는 과정에서 생길 수 있는 상황들에 대해서 기술하여 처음 접하는 상황이라고 해도 좀 더 자연스럽게 대처할 수 있도록 경험에 기반 해 담아냈다. 그리고 일을 구했다고 해서 워킹홀리데이가 끝나는 것은 절대 아니고 시작이다. 따라서 실제로 내가 일했던 곳에서 내가 겪었던 문제 상황들을 담아둬, 미처 생각해 보지 못했던 부분들까지 세심하게 담아 호주에서 첫 발을 내딛는 데 도움이 되도록 했다.", historyUrl: "https://blog.naver.com/TODO/TODO" }
   };
 
   const params = new URLSearchParams(window.location.search);
