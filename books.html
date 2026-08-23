@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>홍길동 — 출간 도서</title>
+<title>하상인 — 출간 도서</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Song+Myung&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="writer.css">
+<link href="https://fonts.googleapis.com/css2?family=Song+Myung&family=IBM+Plex+Sans+KR:wght@400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
 
@@ -16,94 +17,140 @@
   <aside class="sidebar">
     <div class="sidebar-top">
       <!-- TODO: 실제 이름으로 교체 -->
-      <a href="index.html" class="brand">홍길동</a>
+      <a href="index.html" class="brand">하상인</a>
 
       <nav class="sidebar-nav">
         <a href="writer.html">작가</a>
         <a href="books.html" class="is-active">출간도서</a>
-        <a href="lecture.html">강연문의</a>
-
         <div class="nav-group">
           <a href="admin.html">행정사</a>
           <div class="nav-sub">
-            <a href="admin.html">성공사례</a>
+            <a href="admin.html">전문 업무 분야</a>
+            <a href="admin.html#success">성공사례</a>
             <a href="admin.html#consult">상담신청안내</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <a href="lecture.html">강연문의</a>
+          <div class="nav-sub">
+            <a href="lecture.html">강연 주제</a>
+            <a href="lecture.html#history">강연 실적</a>
+            <a href="lecture.html#career">경력 / 학력</a>
+            <a href="lecture.html#books">저서</a>
+            <a href="lecture.html#faq">자주 묻는 질문</a>
+            <a href="lecture.html#request-form">섭외요청폼</a>
           </div>
         </div>
       </nav>
     </div>
 
     <!-- TODO: 실제 이름으로 교체 -->
-    <p class="sidebar-footer">© 홍길동.<br>All rights reserved.</p>
+    <p class="sidebar-footer">© 하상인.<br>All rights reserved.</p>
   </aside>
 
   <main class="page-main">
-    <div class="content-panel">
-      <span class="page-eyebrow">BOOKS</span>
-      <h1 class="page-title">출간 도서</h1>
+    <div class="page-inner">
+      <div class="page-header">
+        <h1 class="page-title">출간 도서</h1>
+        <img src="images/books-illustration.png" alt="" class="books-illustration" aria-hidden="true">
+      </div>
+      <div class="content-panel">
 
-      <div class="books-grid">
-        <!-- TODO: 각 책 표지 이미지로 교체 (아래 div를 <img>로 바꾸세요) -->
+        <div class="books-grid">
+          <!-- TODO: 각 책 표지 이미지로 교체 (아래 div를 <img>로 바꾸세요) -->
 
-        <a href="book.html?id=1" class="book-card">
-          <div class="book-cover"><span>마음이 넓지 않은 사람이 불안을 대하는 방법</span></div>
-          <h3 class="book-title">마음이 넓지 않은 사람이 불안을 대하는 방법</h3>
-          <p class="book-year">2026</p>
+          <a href="book.html?id=10" class="book-card">
+            <div class="book-cover"><img src="images/book-10.jpg" alt="마음이 넓지 않은 사람이 불안을 대하는 방법"></div>
+            <h3 class="book-title">마음이 넓지 않은 사람이 불안을 대하는 방법</h3>
+            <p class="book-year">2026</p>
+          </a>
+
+          <a href="book.html?id=9" class="book-card">
+            <div class="book-cover"><img src="images/book-9.jpg" alt="누구나 할 수 있는 일상 속 행정심판"></div>
+            <h3 class="book-title">누구나 할 수 있는 일상 속 행정심판</h3>
+            <p class="book-year">2023</p>
+          </a>
+
+          <a href="book.html?id=8" class="book-card">
+            <div class="book-cover"><img src="images/book-8.jpg" alt="이모작"></div>
+            <h3 class="book-title"><!-- TODO -->이모작</h3>
+            <p class="book-year"><!-- TODO -->2023</p>
+          </a>
+
+          <a href="book.html?id=7" class="book-card">
+            <div class="book-cover"><img src="images/book-7.jpg" alt="그렇게 떠났고 다시 만났다"></div>
+            <h3 class="book-title"><!-- TODO -->그렇게 떠났고 다시 만났다</h3>
+            <p class="book-year">2021</p>
+          </a>
+
+          <a href="book.html?id=6" class="book-card">
+            <div class="book-cover"><img src="images/book-6.jpg" alt="이번이 마지막 다음입니다"></div>
+            <h3 class="book-title"><!-- TODO -->이번이 마지막 다음입니다</h3>
+            <p class="book-year">2019</p>
+          </a>
+
+          <a href="book.html?id=5" class="book-card">
+            <div class="book-cover"><img src="images/book-5.jpg" alt="우연히 그녀의 소식을 듣게 되었다"></div>
+            <h3 class="book-title"><!-- TODO -->우연히 그녀의 소식을 듣게 되었다</h3>
+            <p class="book-year">2018</p>
+          </a>
+
+          <a href="book.html?id=4" class="book-card">
+            <div class="book-cover"><img src="images/book-4.jpg" alt="그래도 당신은 아름답다"></div>
+            <h3 class="book-title"><!-- TODO -->그래도 당신은 아름답다</h3>
+            <p class="book-year">2017</p>
+          </a>
+
+          <a href="book.html?id=3" class="book-card">
+            <div class="book-cover"><img src="images/book-3.jpg" alt="정당한 살인교사"></div>
+            <h3 class="book-title">정당한 살인교사</h3>
+            <p class="book-year">2016</p>
+          </a>
+
+          <a href="book.html?id=2" class="book-card">
+            <div class="book-cover"><img src="images/book-2.jpg" alt="20대, 20대에게 길을 묻다"></div>
+            <h3 class="book-title"><!-- TODO -->20대, 20대에게 길을 묻다</h3>
+            <p class="book-year">2015</p>
+          </a>
+
+          <a href="book.html?id=1" class="book-card">
+            <div class="book-cover"><img src="images/book-1.jpg" alt="백만 원으로 호주 워킹홀리데이 다녀오기"></div>
+            <h3 class="book-title"><!-- TODO -->백만 원으로 호주 워킹홀리데이 다녀오기</h3>
+            <p class="book-year">2014</p>
+          </a>
+        </div>
+      </div>
+      <div class="brunch-books-section">
+        <a href="https://brunch.co.kr/@hasangin21?tab=works" target="_blank" rel="noopener" class="brunch-logo-link">
+          <img src="images/brunch-logo.png" alt="brunch" class="brunch-logo">
         </a>
 
-        <a href="book.html?id=2" class="book-card">
-          <div class="book-cover"><span>누구나 할 수 있는 일상 속 행정심판</span></div>
-          <h3 class="book-title">누구나 할 수 있는 일상 속 행정심판</h3>
-          <p class="book-year">2023</p>
-        </a>
+        <div class="books-grid">
+          <a href="https://brunch.co.kr/magazine/self-archive" class="book-card" target="_blank" rel="noopener">
+            <div class="book-cover"><img src="images/brunch-cover-5.png" alt="하상인의 자기 기록 연구소"><img src="images/brunch-mark.png" alt="" class="brunch-mark" aria-hidden="true"></div>
+            <h3 class="book-title">하상인의 자기 기록 연구소</h3>
+          </a>
 
-        <a href="book.html?id=3" class="book-card">
-          <div class="book-cover"><span>이모작</span></div>
-          <h3 class="book-title"><!-- TODO -->이모작</h3>
-          <p class="book-year"><!-- TODO -->2023</p>
-        </a>
+          <a href="https://brunch.co.kr/brunchbook/1spoon" class="book-card" target="_blank" rel="noopener">
+            <div class="book-cover"><img src="images/brunch-cover-4.png" alt="자존감 한스푼"><img src="images/brunch-mark.png" alt="" class="brunch-mark" aria-hidden="true"></div>
+            <h3 class="book-title">자존감 한스푼</h3>
+          </a>
 
-        <a href="book.html?id=4" class="book-card">
-          <div class="book-cover"><span>그렇게 떠났고 다시 만났다</span></div>
-          <h3 class="book-title"><!-- TODO -->그렇게 떠났고 다시 만났다</h3>
-          <p class="book-year">2021</p>
-        </a>
+          <a href="https://brunch.co.kr/brunchbook/gulnamja" class="book-card" target="_blank" rel="noopener">
+            <div class="book-cover"><img src="images/brunch-cover-3.png" alt="글재주 없는 남자가 작가로 사는 법"><img src="images/brunch-mark.png" alt="" class="brunch-mark" aria-hidden="true"></div>
+            <h3 class="book-title">글재주 없는 남자가 작가로 사는 법</h3>
+          </a>
 
-        <a href="book.html?id=5" class="book-card">
-          <div class="book-cover"><span>이번이 마지막 다음입니다</span></div>
-          <h3 class="book-title"><!-- TODO -->이번이 마지막 다음입니다</h3>
-          <p class="book-year">2019</p>
-        </a>
+          <a href="https://brunch.co.kr/brunchbook/obun" class="book-card" target="_blank" rel="noopener">
+            <div class="book-cover"><img src="images/brunch-cover-2.png" alt="삶을 바꾸는 5분 2편"><img src="images/brunch-mark.png" alt="" class="brunch-mark" aria-hidden="true"></div>
+            <h3 class="book-title">삶을 바꾸는 5분 2편</h3>
+          </a>
 
-        <a href="book.html?id=6" class="book-card">
-          <div class="book-cover"><span>우연히 그녀의 소식을 듣게 되었다</span></div>
-          <h3 class="book-title"><!-- TODO -->우연히 그녀의 소식을 듣게 되었다</h3>
-          <p class="book-year">2018</p>
-        </a>
-
-        <a href="book.html?id=7" class="book-card">
-          <div class="book-cover"><span>그래도 당신은 아름답다</span></div>
-          <h3 class="book-title"><!-- TODO -->그래도 당신은 아름답다</h3>
-          <p class="book-year">2017</p>
-        </a>
-
-        <a href="book.html?id=8" class="book-card">
-          <div class="book-cover"><span>정당한 살인교사</span></div>
-          <h3 class="book-title">정당한 살인교사</h3>
-          <p class="book-year">2016</p>
-        </a>
-
-        <a href="book.html?id=9" class="book-card">
-          <div class="book-cover"><span>20대, 20대에게 길을 묻다</span></div>
-          <h3 class="book-title"><!-- TODO -->20대, 20대에게 길을 묻다</h3>
-          <p class="book-year">2015</p>
-        </a>
-
-        <a href="book.html?id=10" class="book-card">
-          <div class="book-cover"><span>백만 원으로 호주 워킹홀리데이 다녀오기</span></div>
-          <h3 class="book-title"><!-- TODO -->백만 원으로 호주 워킹홀리데이 다녀오기</h3>
-          <p class="book-year">2014</p>
-        </a>
+          <a href="https://brunch.co.kr/brunchbook/hasangin212" class="book-card" target="_blank" rel="noopener">
+            <div class="book-cover"><img src="images/brunch-cover-1.png" alt="삶을 바꾸는 5분"><img src="images/brunch-mark.png" alt="" class="brunch-mark" aria-hidden="true"></div>
+            <h3 class="book-title">삶을 바꾸는 5분</h3>
+          </a>
+        </div>
       </div>
     </div>
   </main>

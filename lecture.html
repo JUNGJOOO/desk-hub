@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>홍길동 — 강연문의</title>
+<title>하상인 — 강연문의</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Song+Myung&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="writer.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
 
@@ -16,77 +17,384 @@
   <aside class="sidebar">
     <div class="sidebar-top">
       <!-- TODO: 실제 이름으로 교체 -->
-      <a href="index.html" class="brand">홍길동</a>
+      <a href="index.html" class="brand">하상인</a>
 
       <nav class="sidebar-nav">
         <a href="writer.html">작가</a>
         <a href="books.html">출간도서</a>
-        <a href="lecture.html" class="is-active">강연문의</a>
-
         <div class="nav-group">
           <a href="admin.html">행정사</a>
           <div class="nav-sub">
-            <a href="admin.html">성공사례</a>
+            <a href="admin.html">전문 업무 분야</a>
+            <a href="admin.html#success">성공사례</a>
             <a href="admin.html#consult">상담신청안내</a>
           </div>
         </div>
+        <div class="nav-group">
+          <a href="lecture.html" class="is-active">강연문의</a>
+          <div class="nav-sub">
+            <a href="lecture.html">강연 주제</a>
+            <a href="lecture.html#history">강연 실적</a>
+            <a href="lecture.html#career">경력 / 학력</a>
+            <a href="lecture.html#books">저서</a>
+            <a href="lecture.html#faq">자주 묻는 질문</a>
+            <a href="lecture.html#request-form">섭외요청폼</a>
+          </div>
+        </div>
+        
       </nav>
     </div>
 
     <!-- TODO: 실제 이름으로 교체 -->
-    <p class="sidebar-footer">© 홍길동.<br>All rights reserved.</p>
+    <p class="sidebar-footer">© 하상인.<br>All rights reserved.</p>
   </aside>
 
   <main class="page-main">
-    <div class="content-panel">
-      <span class="page-eyebrow">LECTURE INQUIRY</span>
-      <h1 class="page-title">강연문의</h1>
-      <p class="book-detail-desc"><!-- TODO -->
-        글쓰기, 기록하는 삶, 행정과 글이 만나는 지점에 대해 강연합니다.
-        학교, 도서관, 기업, 단체 강연 문의를 받고 있습니다.
-      </p>
+    <div class="page-inner">
+
+      <div class="lecture-hero">
+
+        <div class="lecture-hero-text">
+          <h1 class="page-title">강연문의</h1>
+          <p class="lecture-detail-desc">
+            채워둔 내용입니다. 최소6줄 ~ 최대12줄 가능<br><br>
+            글쓰기, 기록하는 삶, 행정과 글이 만나는 지점에 대해 강연합니다.<br>
+            학교, 도서관, 기업, 단체 강연 문의를 받고 있습니다.
+            청춘들에게 희망과 용기를 주기 위한 커리어 코치로,<br>
+            부산외국어대학교 취업전담교수로, 외부 특강 강사로, 작가로, 칼럼니스트로, 상담가로 다양하게 활동하고 있다.<br>
+            1천만 명이 방문한 블로그 ‘커리어노트(www.careernote.co.kr)’를 운영하는 파워블로거이다.<br>
+          </p>
+        </div>
+
+        <div class="lecture-hero-photo">
+          <!-- TODO: 실제 프로필 사진으로 교체 -->
+          <img src="images/profile-lecture.png" alt="하상인 강연자">
+        </div>
+      </div>
+
+
+      <!-- 1. 강연 주제 -->
+      <section class="admin-section" id="topics">
+        <h2 class="admin-section-title">강연 주제</h2>
+
+        <div class="case-grid-compact">
+          <div class="case-item">
+            <span class="case-name">기록하는 삶, 쓰는 사람</span>
+            <p class="case-desc">
+              일상을 글로 남기는 방법과 습관에 대해 이야기합니다. <br>
+              카테고리 : 인문·교양  / 서비스 대상 : 무관
+            </p>
+          </div>
+          <div class="case-item">
+            <span class="case-name">에세이 쓰기의 시작</span>
+            <p class="case-desc">
+              소재 찾기부터 첫 문장을 쓰는 법까지 다룹니다.<br>
+              카테고리 : 인문·교양  / 서비스 대상 : 무관
+            </p>
+          </div>
+          <div class="case-item">
+            <span class="case-name">두 개의 직업으로 살아가는 법</span>
+            <p class="case-desc">
+              작가이자 행정사로 일해온 경험을 나눕니다.<br>
+              카테고리 : 인문·교양  / 서비스 대상 : 무관
+            </p>
+          </div>
+          <div class="case-item">
+            <span class="case-name">자신을 과소평가 하지 말 것</span>
+            <p class="case-desc">
+              자신을 과소평가 하지 말 것<br>
+              카테고리 : 인문·교양  / 서비스 대상 : 무관
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. 강연 실적 -->
+      <section class="admin-section" id="history">
+        <h2 class="admin-section-title">강연 실적</h2>
+        <p class="consult-hours">채워둔 내용입니다. 실제 이력을 알려주시면 정리해드릴게요.</p>
+
+        <ul class="admin-career-list">
+          <li><!-- TODO -->2022 복대중학교 「진로 수업」 강연</li>
+          <li><!-- TODO -->2022 OO구립도서관 「일상을 기록하는 글쓰기」 특강</li>
+        </ul>
+      </section>
+
+      <!-- 3. 경력 / 학력 -->
+      <section class="admin-section" id="career">
+        <h2 class="admin-section-title">경력 / 학력</h2>
+
+        <ul class="admin-career-list">
+          <li><!-- TODO -->명지대학교 영문학과 졸업</li>
+          <li><!-- TODO -->2014년 첫 저서 출간, 작가 활동 시작</li>
+          <li><!-- TODO -->2015년 제3회 일반행정사 시험 합격, 행정사 활동 시작</li>
+          <li><!-- TODO -->현재 하상인 행정사 사무소 대표</li>
+        </ul>
+      </section>
+
+      <!-- 4. 저서 -->
+      <section class="admin-section" id="books">
+        <h2 class="admin-section-title">저서</h2>
+        <p class="consult-hours"><!-- TODO -->여행, 자기계발, 소설, 법학, 에세이 등 다양한 분야에서 열 권의 책을 펴냈습니다.</p>
+        <a href="books.html" class="pill-btn">출간 도서 전체 보기 <span aria-hidden="true">→</span></a>
+        <div class="books-grid">
+          <!-- TODO: 각 책 표지 이미지로 교체 (아래 div를 <img>로 바꾸세요) -->
+
+          <a href="book.html?id=10" class="book-card">
+            <div class="book-cover"><img src="images/book-10.jpg" alt="마음이 넓지 않은 사람이 불안을 대하는 방법"></div>
+            <h3 class="book-title">마음이 넓지 않은 사람이 불안을 대하는 방법</h3>
+            <p class="book-year">2026</p>
+          </a>
+
+          <a href="book.html?id=9" class="book-card">
+            <div class="book-cover"><img src="images/book-9.jpg" alt="누구나 할 수 있는 일상 속 행정심판"></div>
+            <h3 class="book-title">누구나 할 수 있는 일상 속 행정심판</h3>
+            <p class="book-year">2023</p>
+          </a>
+
+          <a href="book.html?id=8" class="book-card">
+            <div class="book-cover"><img src="images/book-8.jpg" alt="이모작"></div>
+            <h3 class="book-title"><!-- TODO -->이모작</h3>
+            <p class="book-year"><!-- TODO -->2023</p>
+          </a>
+          
+          <a href="book.html?id=2" class="book-card">
+            <div class="book-cover"><img src="images/book-2.jpg" alt="20대, 20대에게 길을 묻다"></div>
+            <h3 class="book-title"><!-- TODO -->20대, 20대에게 길을 묻다</h3>
+            <p class="book-year">2015</p>
+          </a>
+
+          <a href="book.html?id=1" class="book-card">
+            <div class="book-cover"><img src="images/book-1.jpg" alt="백만 원으로 호주 워킹홀리데이 다녀오기"></div>
+            <h3 class="book-title"><!-- TODO -->백만 원으로 호주 워킹홀리데이 다녀오기</h3>
+            <p class="book-year">2014</p>
+          </a>
+          
+        </div>
+      </section>
+
+      <!-- 5. 기사 및 인터뷰 -->
+      <!-- <section class="admin-section" id="press">
+        <h2 class="admin-section-title">기사 및 인터뷰</h2>
+        <p class="consult-hours"><a href="https://blog.naver.com/hasangin21/222935335323">기사</a></p>
+      </section> -->
+
+      <!-- 6. 활동사진 -->
+      <section class="admin-section" id="photos">
+        <h2 class="admin-section-title">활동사진</h2>
+        <p class="consult-hours"><!-- TODO --></p>
+
+        <div class="photo-grid">
+          <!-- TODO: 실제 강연/활동 사진으로 교체 (아래 div를 <img>로 바꾸세요) -->
+          <div class="photo-placeholder"><img src="images/lecture_photo1.jpg" alt="활동 사진 1"></div>
+          <div class="photo-placeholder"><img src="images/lecture_photo2.jpg" alt="활동 사진 2"></div>
+          <div class="photo-placeholder"><img src="images/lecture_photo3.jpg" alt="활동 사진 3"></div>
+          <!-- <div class="photo-placeholder"><img src="images/lecture_photo1.jpg" alt="활동 사진 1"></div> -->
+        </div>
+      </section>
+
+      <!-- 7. 자주 묻는 질문 -->
+      <section class="admin-section" id="faq">
+        <h2 class="admin-section-title">자주 묻는 질문</h2>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-question">강연 시간이 어떻게 되나요?</summary>
+            <p class="faq-answer">기본 1시간이며, 요청에 따라 조정 가능합니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">강연료는 어떻게 되나요?</summary>
+            <p class="faq-answer">기관 규모와 강연 형태에 따라 다르므로 문의 시 안내드립니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">섭외 가능 지역이 어디까지인가요?</summary>
+            <p class="faq-answer"><!-- TODO: 교통비 별도 여부 확인 필요 -->전국 어디든 가능합니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">섭외는 언제까지 신청해야 하나요?</summary>
+            <p class="faq-answer"><!-- TODO: 실제 리드타임 확인 필요 -->최소 2주 전 신청을 권장드립니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">답변은 얼마나 걸리나요?</summary>
+            <p class="faq-answer"><!-- TODO: 실제 소요 기간 확인 필요 -->영업일 기준 3일 이내 답변드립니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">자료(PPT)는 제공되나요?</summary>
+            <p class="faq-answer">네, 강연 자료를 함께 제공해 드립니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Q&amp;A 시간도 포함되나요?</summary>
+            <p class="faq-answer">네, 강연 후 10~15분 정도 Q&amp;A 시간을 진행합니다.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="consult" class="admin-section">
+        <h2 class="admin-section-title">문의 안내</h2>
+
+        <p class="book-detail-desc"><!-- TODO -->
+          전화로 문의해주셔도 좋고,<br>
+          아래 섭외요청폼을 바로 작성해주셔도 좋습니다.
+        </p>
+
+        <ol class="consult-steps">
+          <li><span>01</span>문의 접수 — 채워둔 내용입니다.</li>
+          <li><span>02</span>일정 조율 — 채워둔 내용입니다.</li>
+          <li><span>03</span>검토 — 채워둔 내용입니다.</li>
+        </ol>
+
+        <div class="consult-info">
+          <div class="consult-info-row">
+            <span class="consult-info-label">전화</span>
+            <a href="tel:0100000000" class="consult-info-value">010-0000-0000</a>
+          </div>
+          <div class="consult-info-row">
+            <span class="consult-info-label">상담 시간</span>
+            <span class="consult-info-value">평일 09:00 – 18:00</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="admin-section" id="request-form">
+        <h2 class="admin-section-title">섭외요청폼</h2>
+        <p class="consult-hours">아래 내용을 작성해서 보내주시면 순서대로 확인 후 연락드립니다.</p>
+
+        <!--
+          구글폼 "강연 요청"에 실제로 연결된 상태입니다.
+          (action 주소와 각 entry 코드는 구글폼에서 직접 확인해서 채운 값입니다)
+        -->
+        <div class="request-form-card">
+        <form
+          id="requestForm"
+          class="request-form"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSfB7gas2jEH_sMSVdl_RNIpEGx-1m5SYXf_1p8cFvgyqfhZIA/formResponse"
+          method="POST"
+          target="hidden_iframe"
+        >
+            <!-- <label class="request-form-legend">섭외요청자 <span class="required">*</span></label> -->
+
+          <div class="request-form-row">
+            <label for="reqName">섭외요청자 성명 <span class="required">*</span></label>
+            <input type="text" id="reqName" name="entry.1696307814" placeholder="성명" required>
+          </div>
+          <div class="request-form-row">
+            <label for="reqPhone">섭외요청자 연락처 <span class="required">*</span></label>
+            <input type="tel" id="reqPhone" name="entry.778219001" placeholder="연락처" required>
+          </div>
+          <div class="request-form-row">
+            <label for="reqEmail">섭외요청자 이메일 <span class="required">*</span></label>
+            <input type="email" id="reqEmail" name="entry.1296656941" placeholder="회사 계정의 이메일을 기재해주세요" required>
+          </div>
+
+          <div class="request-form-row">
+            <label for="reqOrg">주관 <span class="required">*</span></label>
+            <input type="text" id="reqOrg" name="entry.1207706891" placeholder="주관, 대행사가 다른 경우 각각 기재해주세요." required>
+          </div>
+
+          <div class="request-form-row">
+            <label for="reqTopic">주제 <span class="required">*</span></label>
+            <input type="text" id="reqTopic" name="entry.196973620" placeholder="희망 주제를 기재해주세요." required>
+          </div>
+
+          <div class="request-form-row">
+            <label>일정</label>
+            <div class="request-form-schedule">
+              <input type="date" id="reqDate" required>
+              <!-- 구글폼의 날짜 질문은 year/month/day를 각각 별도 필드로 받기 때문에,
+                   제출 직전 스크립트가 위 date 입력값을 아래 3개 hidden 필드로 나눠 채웁니다. -->
+              <input type="hidden" id="reqYear" name="entry.1064910114_year">
+              <input type="hidden" id="reqMonth" name="entry.1064910114_month">
+              <input type="hidden" id="reqDay" name="entry.1064910114_day">
+
+              <select id="reqHour" name="entry.1064910114_hour">
+                <option value="">시</option>
+                <script>
+                  for (let h = 0; h < 24; h++) {
+                    document.write(`<option value="${h}">${h}시</option>`);
+                  }
+                </script>
+              </select>
+              <select id="reqMinute" name="entry.1064910114_minute">
+                <option value="">분</option>
+                <option value="0">00분</option>
+                <option value="30">30분</option>
+              </select>
+              <select id="reqDuration">
+                <option value="">강의시간</option>
+                <option value="1시간">1시간</option>
+                <option value="1시간 30분">1시간 30분</option>
+                <option value="2시간">2시간</option>
+                <option value="2시간 이상">2시간 이상</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="request-form-row">
+            <label for="reqPlace">장소</label>
+            <input type="text" id="reqPlace" name="entry.84223020" placeholder="장소를 입력해주세요. (실내, 야외 구분)">
+          </div>
+
+          <div class="request-form-row">
+            <label for="reqAudience">대상</label>
+            <input type="text" id="reqAudience" name="entry.301774129" placeholder="성비, 연령, 소속, 직급 등 자유롭게 기재해주세요.">
+          </div>
+
+          <div class="request-form-row">
+            <label for="reqCount">인원</label>
+            <input type="text" id="reqCount" name="entry.1746227745" placeholder="예상 인원을 기재해주세요.">
+          </div>
+
+          <div class="request-form-row">
+            <label for="reqBudget">예산</label>
+            <input type="text" id="reqBudget" name="entry.46893865" placeholder="예산 범위를 기재해주세요. (VAT 별도입니다).">
+          </div>
+
+          <div class="request-form-row">
+            <label for="reqEtc">기타문의</label>
+            <textarea id="reqEtc" name="entry.1310980513" rows="4" placeholder="기타 문의 내용을 기재해주세요."></textarea>
+          </div>
+
+          <button type="submit" class="request-form-submit">섭외 문의하기</button>
+          <p class="request-form-status" id="requestFormStatus" hidden>보내드렸습니다. 확인 후 순서대로 연락드리겠습니다.</p>
+        </form>
+        </div>
+
+        <!-- 구글폼으로 제출할 때 페이지 이동 없이 조용히 보내기 위한 숨김 iframe -->
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+      </section>
     </div>
-
-    <section class="admin-section">
-      <span class="page-eyebrow">TOPICS</span>
-      <h2 class="admin-section-title">강연 주제 예시</h2>
-
-      <div class="case-grid-compact">
-        <div class="case-item">
-          <span class="case-name"><!-- TODO -->기록하는 삶, 쓰는 사람</span>
-        </div>
-        <div class="case-item">
-          <span class="case-name"><!-- TODO -->에세이 쓰기의 시작</span>
-        </div>
-        <div class="case-item">
-          <span class="case-name"><!-- TODO -->두 개의 직업으로 살아가는 법</span>
-        </div>
-        <div class="case-item">
-          <span class="case-name"><!-- TODO -->글과 서류, 다른 언어를 쓰는 일</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="admin-section">
-      <span class="page-eyebrow">CONTACT</span>
-      <h2 class="admin-section-title">문의 안내</h2>
-      <p class="consult-hours">강연 일정, 대상, 희망 주제를 남겨주시면 순서대로 답변드립니다.</p>
-
-      <div class="consult-info">
-        <!-- TODO: 실제 연락처로 교체 -->
-        <div class="consult-info-row">
-          <span class="consult-info-label">전화</span>
-          <a href="tel:0100000000" class="consult-info-value">010-0000-0000</a>
-        </div>
-        <div class="consult-info-row">
-          <span class="consult-info-label">상담 시간</span>
-          <span class="consult-info-value">평일 09:00 – 18:00</span>
-        </div>
-      </div>
-    </section>
   </main>
 
 </div>
+
+<script>
+  const requestForm = document.getElementById('requestForm');
+  const statusEl = document.getElementById('requestFormStatus');
+  const hiddenIframe = document.getElementById('hidden_iframe');
+
+  if (requestForm) {
+    let submitted = false;
+
+    requestForm.addEventListener('submit', () => {
+      // 날짜 입력값(YYYY-MM-DD)을 구글폼이 요구하는 year/month/day로 분리
+      const dateVal = document.getElementById('reqDate').value;
+      if (dateVal) {
+        const [y, m, d] = dateVal.split('-');
+        document.getElementById('reqYear').value = y;
+        document.getElementById('reqMonth').value = String(Number(m));
+        document.getElementById('reqDay').value = String(Number(d));
+      }
+      submitted = true;
+    });
+
+    hiddenIframe.addEventListener('load', () => {
+      if (submitted) {
+        statusEl.hidden = false;
+        requestForm.reset();
+      }
+    });
+  }
+</script>
 
 </body>
 </html>

@@ -1,0 +1,98 @@
+/* ==========================================================================
+   home.css — index.html(메인) 전용 스타일
+   common.css를 먼저 불러온 뒤 이 파일을 적용합니다.
+   ========================================================================== */
+
+body{
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* ---------- decorative column grid ---------- */
+.grid-lines{
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  pointer-events: none;
+}
+.grid-lines span{ border-left: 1px solid var(--line); height: 100%; }
+.grid-lines span.center{ border-left: 1px solid var(--line-strong); }
+
+/* ---------- Hero ---------- */
+#top{
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero{
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(2rem, 6vw, 4rem) 0;
+}
+
+.hero-tagline{
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: .92rem;
+  letter-spacing: .06em;
+  color: var(--ink-soft);
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.hero-split{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-col{ padding: 0 clamp(1.5rem, 6vw, 5rem); }
+
+.hero-eyebrow{
+  display: block;
+  font-size: .78rem;
+  letter-spacing: .18em;
+  color: var(--ink-soft);
+  margin-bottom: 1.25rem;
+}
+
+.hero-name{ margin: 0 0 1.5rem; line-height: .95; }
+.hero-given{
+  display: block;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  color: var(--ink);
+}
+.hero-role{
+  display: block;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2.6rem, 5.4vw, 4rem);
+  color: var(--ink-soft);
+}
+.hero-role--admin{ color: var(--ink); }
+
+.hero-desc{
+  max-width: 34ch;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  margin: 0 0 2rem;
+}
+
+@media (max-width: 780px){
+  .hero-split{ grid-template-columns: 1fr; }
+  .hero-col{ padding: 0 clamp(1.25rem, 6vw, 2.5rem) 3rem; }
+  .hero-col:first-child{ border-bottom: 1px solid var(--line); padding-bottom: 3rem; margin-bottom: 3rem; }
+  .grid-lines{ display: none; }
+}

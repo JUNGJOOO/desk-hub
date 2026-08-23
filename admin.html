@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>홍길동 — 행정사</title>
+<title>하상인 — 행정사</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Song+Myung&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="writer.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
 
@@ -16,386 +17,357 @@
   <aside class="sidebar">
     <div class="sidebar-top">
       <!-- TODO: 실제 이름으로 교체 -->
-      <a href="index.html" class="brand">홍길동</a>
+      <a href="index.html" class="brand">하상인</a>
 
       <nav class="sidebar-nav">
         <a href="writer.html">작가</a>
         <a href="books.html">출간도서</a>
-        <a href="lecture.html">강연문의</a>
-
         <div class="nav-group">
           <a href="admin.html" class="is-active">행정사</a>
           <div class="nav-sub">
-            <a href="admin.html">성공사례</a>
+            <a href="admin.html">전문 업무 분야</a>
+            <a href="admin.html#success">성공사례</a>
             <a href="admin.html#consult">상담신청안내</a>
           </div>
         </div>
+        <div class="nav-group">
+          <a href="lecture.html">강연문의</a>
+          <div class="nav-sub">
+            <a href="lecture.html">강연 주제</a>
+            <a href="lecture.html#history">강연 실적</a>
+            <a href="lecture.html#career">경력 / 학력</a>
+            <a href="lecture.html#books">저서</a>
+            <a href="lecture.html#faq">자주 묻는 질문</a>
+            <a href="lecture.html#request-form">섭외요청폼</a>
+          </div>
+        </div>
+
       </nav>
     </div>
 
     <!-- TODO: 실제 이름으로 교체 -->
-    <p class="sidebar-footer">© 홍길동.<br>All rights reserved.</p>
+    <p class="sidebar-footer">© 하상인.<br>All rights reserved.</p>
   </aside>
 
   <main class="page-main">
-    <div class="content-panel">
-      <span class="page-eyebrow">ADMINISTRATIVE AGENT</span>
-      <!-- TODO: 실제 이름으로 교체 -->
-      <h1 class="page-title">홍길동 · 행정사</h1>
-      <p class="book-detail-desc"><!-- TODO -->
-        서류와 절차를 정확하게 정리해 드립니다. 민원, 등기, 인허가, 계약서 검토 등
-        복잡한 행정 업무를 맡아 처리합니다.
-      </p>
+    <div class="page-inner">
+      
+      <div class="admin-hero">
+        <div class="admin-hero-text">
+          <div class="admin-hero-title-row">
+            <img src="images/admin-badge.svg" alt="" class="admin-badge" aria-hidden="true">
+            <!-- TODO: 실제 이름으로 교체 -->
+            <!-- <h1 class="admin-hero-name">하상인 행정사</h1> -->
+            <h1 class="page-title">하상인 행정 사무소</h1>
+          </div>
+          <p class="admin-hero-quote">"행정의 막막한 절차 속에서 길을 찾다"<br>서울 구로구 하상인 행정사 사무소</p>
+
+          <span class="admin-career-badge">경력사항</span>
+          <ul class="admin-career-list"><!-- TODO: 실제 경력사항으로 교체 -->
+            <li>하상인 행정사 사무소 대표</li>
+            <li>행정사(제3회 시험 출신)</li>
+            <li>생활스포츠지도사 2급 자격증(보디빌딩)</li>
+            <li>TESOL 국제 영어강사 자격증</li>
+            <li>명지대학교 영문학과 졸업</li>
+          </ul>
+        </div>
+
+        <div class="admin-hero-photo">
+          <!-- TODO: 실제 프로필 사진으로 교체 -->
+          <img src="images/profile-admin.png" alt="하상인 행정사">
+        </div>
+      </div>
+
+      <section class="admin-section admin-expertise">
+        <h2 class="expertise-title">전문 업무 분야</h2>
+
+        <div class="expertise-grid">
+          <div class="expertise-card">
+            <span class="expertise-num-bg" aria-hidden="true">01</span>
+            <span class="expertise-tag">EXPERTISE 01</span>
+            <h3 class="expertise-card-title">인권침해 진정<br>/ 행정심판 청구</h3>
+            <ul class="expertise-list">
+              <li>국가인권위원회 진정서 작성 및 제출</li>
+              <li>차별·권리 침해 사안의 사실관계 정리</li>
+              <li>행정심판 청구서 작성과 절차 전반 지원</li>
+              <li>정보공개 거부·인허가 취소 구제</li>
+            </ul>
+            <a href="#success" class="expertise-more">자세히 보기 <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="expertise-card">
+            <span class="expertise-num-bg" aria-hidden="true">02</span>
+            <span class="expertise-tag">EXPERTISE 02</span>
+            <h3 class="expertise-card-title">스포츠 행정<br>(지도자 자격 보유)</h3>
+            <ul class="expertise-list">
+              <li>체육시설업 신고·등록 및 변경신고</li>
+              <li>영업정지·과징금 처분 감경 의견 제출</li>
+              <li>안전·위생 기준 미준수 지적 대응</li>
+              <li>지도자 배치 기준 위반 처분 구제</li>
+            </ul>
+            <a href="#success" class="expertise-more">자세히 보기 <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="expertise-card">
+            <span class="expertise-num-bg" aria-hidden="true">03</span>
+            <span class="expertise-tag">EXPERTISE 03</span>
+            <h3 class="expertise-card-title">출입국<br>/ 기초생활보장법 상담</h3>
+            <ul class="expertise-list">
+              <li>디지털 노마드 등 비자·체류 상담</li>
+              <li>입국규제 해제 및 재입국 소명</li>
+              <li>수급 자격·부양의무자 조사 대응</li>
+              <li>보장비용 환수 의견서 및 소명서 작성</li>
+            </ul>
+            <a href="#success" class="expertise-more">자세히 보기 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="success" class="admin-section">
+        <h2 class="admin-section-title">주요 업무 분야 &amp; 성공 사례</h2>
+        <div class="field-tabs" role="tablist">
+          <button type="button" class="field-tab is-active" data-field="01">
+            <span class="field-tab-num">01</span>
+            <span class="field-tab-name">출입국 관련 업무</span>
+          </button>
+          <button type="button" class="field-tab" data-field="02">
+            <span class="field-tab-num">02</span>
+            <span class="field-tab-name">국민기초생활보장법</span>
+          </button>
+          <button type="button" class="field-tab" data-field="03">
+            <span class="field-tab-num">03</span>
+            <span class="field-tab-name">국민체육진흥법</span>
+          </button>
+          <button type="button" class="field-tab" data-field="04">
+            <span class="field-tab-num">04</span>
+            <span class="field-tab-name">도로교통법</span>
+          </button>
+          <button type="button" class="field-tab" data-field="05">
+            <span class="field-tab-num">05</span>
+            <span class="field-tab-name">식품위생법 등</span>
+          </button>
+          <button type="button" class="field-tab" data-field="06">
+            <span class="field-tab-num">06</span>
+            <span class="field-tab-name">국가인권위원회 진정 및 행정심판 청구 사례</span>
+          </button>
+          <button type="button" class="field-tab" data-field="07">
+            <span class="field-tab-num">07</span>
+            <span class="field-tab-name">기타</span>
+          </button>
+        </div>
+
+        <div class="field-panels">
+        <div class="field-panel is-active" data-field-panel="01">
+          <p class="field-desc">하상인 행정사는 영문과를 졸업하였고, 최근 한국어를 하지 못하는 미국 국적 외국인의 디지털 노마드 비자 허가가 가능했던 것도 영어능력과 연관이 있습니다.</p>
+          <div class="case-grid-compact">
+            <div class="case-item">
+              <span class="case-name">1-1. 입국규제 해제</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223500231090" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/221422741780" class="submenu-btn" target="_blank" rel="noopener">위장결혼 및 위명여권 사용에 의한 입국규제 해제 사례 <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/223822209359" class="submenu-btn" target="_blank" rel="noopener">영구입국금지자 입국 성공 사례 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="case-item">
+              <span class="case-name">1-2. 불법체류 등 법률 위반 사실 외국인의 입국</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223368730925" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="case-item">
+              <span class="case-name">1-3. 외국인 배우자 초청</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223167304434" class="submenu-btn" target="_blank" rel="noopener">캄보디아 국적 외국인 배우자 초청 (소득요건 문제) <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/221382971691" class="submenu-btn" target="_blank" rel="noopener">불법체류에 의한 출국명령 후 결혼비자 입국 사례 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="case-item">
+              <span class="case-name">1-4. 불법체류자 고용 등에 따른 한국인 사업주의 출입국사범심사 구제 사례</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223286505098" class="submenu-btn" target="_blank" rel="noopener">취업할 수 없는 외국인 고용에 따른 출입국 사범심사1 (법칙금 감경 성공사례) <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/223051331517" class="submenu-btn" target="_blank" rel="noopener">취업할 수 없는 외국인 고용에 따른 출입국 사범심사2 (법칙금 감경 성공사례) <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="case-item">
+              <span class="case-name">1-5. 외국인 출입국사범심사 사례</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223471687032" class="submenu-btn" target="_blank" rel="noopener">자세히 보기 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="case-item">
+              <span class="case-name">1-6. 불법체류자 다발국 비자 허가 사례</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223447474617" class="submenu-btn" target="_blank" rel="noopener">파키스탄 가족 초청 비자 허가 성공사례 <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/223447474617" class="submenu-btn" target="_blank" rel="noopener">파키스탄 국적의 외국인 D-4 비자 허가 성공사례 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-panel" data-field-panel="02">
+          <p class="field-desc">국민기초생활보장법에 따른 수급자 및 부양의무자 조사에 의한 사유서 작성부터 부정수급 등의 문제로 판단하여 지급한 비용 환수 조치에 대한 의견서 작성 등 다양한 업무를 진행하고 있습니다.</p>
+          <div class="case-grid-compact">
+            <div class="case-item">
+              <span class="case-name">2-1. 보장비용 환수 의견 제출 사례</span>
+              <p class="case-desc">부양하지 않겠다는 사실을 제출한 이후 지급된 급여를 환수하겠다는 통지를 받아 이에 소명을 한 사례입니다.</p>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223622546948" class="submenu-btn" target="_blank" rel="noopener">자세히 보기 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="case-item">
+              <span class="case-name">2-2. 부양의무자 소명서 작성 사례</span>
+              <p class="case-desc">가족관계의 다양성과 부양의무자의 과거 조사 협조 사실 등 여러 사실관계를 종합하여 작성하고 있으므로 상황에 따라 차이가 굉장히 큰 업무입니다.</p>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223329943425" class="submenu-btn" target="_blank" rel="noopener">재차 소명 요청 사례 <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/223164533275" class="submenu-btn" target="_blank" rel="noopener">국민기초생활 보장법에 따른 부양의무자 사유서 작성<span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/223552797099" class="submenu-btn" target="_blank" rel="noopener">인적공제 내역 확인에 의한 가족관계 확인 및 부양여부 조사 안내문을 받게 된 경우<span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/222970146114" class="submenu-btn" target="_blank" rel="noopener">국민기초생활 보장법에 따른 부양의무자 소명서 작성<span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/223646055851" class="submenu-btn" target="_blank" rel="noopener">법률상 이혼은 하지 않았으나 별거 중인 배우자의 급여 신청에 의한 가족관계 해체 소명서 작성<span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/223211261474" class="submenu-btn" target="_blank" rel="noopener">부양의무자의 국세청 연말정산 인적 공제에 따른 소명<span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/223317067364" class="submenu-btn" target="_blank" rel="noopener">부양의무자의 부양의무 면제 성공 사례<span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="case-item">
+              <span class="case-name">2-3. 수급자의 급여 변경/중지 통지에 대한 의견 제출 사례</span>
+              <p class="case-desc">당장 생계 유지가 불가한 수급자로서 급여 중지 통지를 받아 도움을 받은 사례입니다.</p>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223622546948" class="submenu-btn" target="_blank" rel="noopener">기초생활수급자 급여 중지 통지 수령 후 자격 회복 성공사례 <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/223622546948" class="submenu-btn" target="_blank" rel="noopener">기초생계급여 중단 통지를 받아 소명해야 하는 경우<span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-panel" data-field-panel="03">
+          <p class="field-desc">체육시설업 등록·신고 절차부터 스포츠지도사 관련 행정처분 구제까지, 체육 분야 전반의 행정 업무를 지원합니다.</p>
+          <div class="case-grid-compact">
+            <div class="case-item">
+              <span class="case-name">3-1. ?</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223419307436" class="submenu-btn" target="_blank" rel="noopener">학교운동부 지도자로 근무하는 자에 대한 체육지도자 자격정지 처분 성공사례 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+ 
+          </div>
+        </div>
+
+        <div class="field-panel" data-field-panel="04">
+          <p class="field-desc">운전면허 취소·정지 구제부터 특별교통안전교육, 이의신청까지 도로교통법 관련 행정 절차를 신속하게 처리합니다.</p>
+          <div class="case-grid-compact">
+            <div class="case-item">
+              <span class="case-name">4-1. ?</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223265298171" class="submenu-btn" target="_blank" rel="noopener">음주운전 면허취소자 110일 면허정지 감경 성공사례 <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/221357676023" class="submenu-btn" target="_blank" rel="noopener">음주사고로 면허취소 된 여성분의 110일 면허정지 감경 성공사례 <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/221308763160" class="submenu-btn" target="_blank" rel="noopener">음주운전 면허취소자 110일 면허정지 감경 성공 사례 <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/221463100357" class="submenu-btn" target="_blank" rel="noopener">음주운전 면허취소 구제 성공 사례, 행정심판을 통한 110일 면허정지 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+         
+          </div>
+        </div>
+
+        <div class="field-panel" data-field-panel="05">
+          <p class="field-desc">영업정지·과징금 처분 구제부터 위생교육, 영업신고·허가까지 식품·위생 관련 행정 절차를 함께합니다.</p>
+          <div class="case-grid-compact">
+            <div class="case-item">
+              <span class="case-name">5-1. 식품위생법 위반 영업정지 처분 구제</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/221321236386" class="submenu-btn" target="_blank" rel="noopener">식품위생법 위반에 따른 영업소 폐쇄처분, 행정심판 구제 성공사례<span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="case-item">
+              <span class="case-name">5-2. 식품접객업자 청소년 주류 판매 영업정지 2개월 구제 사례</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223032641338" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="case-item">
+              <span class="case-name">5-3. 반찬가게 영업소 폐쇄처분 구제 사례</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/221090492755" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="case-item">
+              <span class="case-name">5-4. 표시 광고 위반 구제 사례</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/221464574343" class="submenu-btn" target="_blank" rel="noopener">건강기능식품에 관한 법률 제18조 위반 영업정지 처분 등, 행정심판 성공 사례 <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/221297237168" class="submenu-btn" target="_blank" rel="noopener">허위표시에 따른 영업정지 2개월 및 과징금 처분 구제 성공살례 <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/221505420188" class="submenu-btn" target="_blank" rel="noopener">소비자를 기만하거나 오인, 혼동시킬 우려가 있는 광고로 인한 영업정지 사례<span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="field-panel" data-field-panel="06">
+          <p class="field-desc">행정기관의 처분이 부당하다고 판단될 때, 국가인권위원회 진정과 행정심판 청구를 통해 권리 구제를 돕습니다.</p>
+          <div class="case-grid-compact">
+            <div class="case-item">
+              <span class="case-name">6-1. 행정기관 차별행위 진정</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223491704209" class="submenu-btn" target="_blank" rel="noopener">표현의 자유 침해(헌법 제21조)에 대한 진정 기각 결정 취소 행정심판 청구 사례 <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/223264509375" class="submenu-btn" target="_blank" rel="noopener">국가인권위원회 기각 결정을 받게 될 경우 불복 방법(보충서면) <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/223346884941" class="submenu-btn" target="_blank" rel="noopener">국가인권위원회 진정 기각 후 행정심판 청구(인권침해/각하사유) <span aria-hidden="true">↗</span></a>
+                <a href="https://blog.naver.com/hasangin21/222381050747" class="submenu-btn" target="_blank" rel="noopener">국가인권위원회에 진정을 넣었다가 기각된 경우 불복?<span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+           
+          
+          </div>
+        </div>
+
+        <div class="field-panel" data-field-panel="07">
+          <p class="field-desc">위 분야에 속하지 않는 다양한 행정 업무도 상담을 통해 지원해 드립니다.</p>
+          <div class="case-grid-compact">
+            <div class="case-item">
+              <span class="case-name">7-1. 국가유공자 선순위유족 비해당 처분 취소 사례</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/222190347527" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="case-item">
+              <span class="case-name">7-2. 학교폭력예방법에 따른 교육지원청교육장의 처분 불복 행정심판 사례</span>
+              <div class="submenu-links">
+                <a href="https://blog.naver.com/hasangin21/223378042038" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+           
+
+          </div>
+        </div>
+
+        </div>
+      </section>
+
+      <section id="consult" class="admin-section">
+        <h2 class="admin-section-title">상담신청 안내</h2>
+
+        <p class="book-detail-desc"><!-- TODO -->
+          어떤 서류든, 절차가 복잡해 막막하다면 편하게 문의해주세요.<br>
+          상황을 먼저 듣고 필요한 절차와 예상 비용을 안내해 드립니다.
+        </p>
+
+        <!-- <p class="consult-hours">전화와 상담 가능 시간을 안내해 드립니다.</p> -->
+
+        <ol class="consult-steps">
+          <li><span>01</span>문의 접수 — 전화나 문자로 상황을 남겨주세요.</li>
+          <li><span>02</span>일정 조율 — 서류 검토 후 상담 일정을 잡습니다.</li>
+          <li><span>03</span>상담 진행 — 절차와 비용을 구체적으로 안내합니다.</li>
+        </ol>
+
+        <div class="consult-info">
+          <div class="consult-info-row">
+            <span class="consult-info-label">전화</span>
+            <a href="tel:0100000000" class="consult-info-value">010-0000-0000</a>
+          </div>
+          <div class="consult-info-row">
+            <span class="consult-info-label">상담 시간</span>
+            <span class="consult-info-value">평일 09:00 – 18:00</span>
+          </div>
+        </div>
+      </section>
     </div>
-
-    <section id="success" class="admin-section">
-      <span class="page-eyebrow">CASE STUDIES</span>
-      <h2 class="admin-section-title">주요 업무 분야 &amp; 성공 사례</h2>
-      <p class="section-hint">분야를 선택하면 관련 사례를 바로 확인할 수 있습니다.</p>
-
-      <div class="field-tabs" role="tablist">
-        <button type="button" class="field-tab is-active" data-field="01">
-          <span class="field-tab-num">01</span>
-          <span class="field-tab-name">출입국 관련 업무</span>
-        </button>
-        <button type="button" class="field-tab" data-field="02">
-          <span class="field-tab-num">02</span>
-          <span class="field-tab-name">국민기초생활보장법</span>
-        </button>
-        <button type="button" class="field-tab" data-field="03">
-          <span class="field-tab-num">03</span>
-          <span class="field-tab-name">국민체육진흥법</span>
-        </button>
-        <button type="button" class="field-tab" data-field="04">
-          <span class="field-tab-num">04</span>
-          <span class="field-tab-name">도로교통법</span>
-        </button>
-        <button type="button" class="field-tab" data-field="05">
-          <span class="field-tab-num">05</span>
-          <span class="field-tab-name">식품위생법 등</span>
-        </button>
-        <button type="button" class="field-tab" data-field="06">
-          <span class="field-tab-num">06</span>
-          <span class="field-tab-name">국가인권위원회 진정 및 행정심판 청구 사례</span>
-        </button>
-        <button type="button" class="field-tab" data-field="07">
-          <span class="field-tab-num">07</span>
-          <span class="field-tab-name">기타</span>
-        </button>
-      </div>
-
-      <div class="field-panels">
-      <div class="field-panel is-active" data-field-panel="01">
-        <p class="field-desc">홍길동 행정사는 영문과를 졸업하였고, 최근 한국어를 하지 못하는 미국 국적 외국인의 디지털 노마드 비자 허가가 가능했던 것도 영어능력과 연관이 있습니다.</p>
-        <div class="case-grid-compact">
-          <div class="case-item">
-            <span class="case-name">1-1. 입국규제 해제</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">위장결혼 및 위명여권 사용에 의한 입국규제 해제 사례 <span aria-hidden="true">↗</span></a>
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">영구입국금지자 입국 성공 사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">1-2. 불법체류 등 법률 위반 사실 외국인의 입국</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">1-3. 외국인 배우자 초청</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">캄보디아 국적 외국인 배우자 초청 (소득요건 문제) <span aria-hidden="true">↗</span></a>
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">불법체류에 의한 출국명령 후 결혼비자 입국 사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">1-4. 불법체류자 고용 등에 따른 한국인 사업주의 출입국사범심사 구제 사례</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">취업할 수 없는 외국인 고용에 따른 출입국 사범심사1 (법칙금 감경 성공사례) <span aria-hidden="true">↗</span></a>
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">취업할 수 없는 외국인 고용에 따른 출입국 사범심사2 (법칙금 감경 성공사) <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">1-5. 외국인 출입국사범심사 사례</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">자세히 보기 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">1-6. 불법체류자 다발국 비자 허가 사례</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">자세히 보기 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="field-panel" data-field-panel="02">
-        <p class="field-desc">국민기초생활보장법에 따른 수급자 및 부양의무자 조사에 의한 사유서 작성부터 부정수급 등의 문제로 판단하여 지급한 비용 환수 조치에 대한 의견서 작성 등 다양한 업무를 진행하고 있습니다.</p>
-        <div class="case-grid-compact">
-          <div class="case-item">
-            <span class="case-name">2-1. 보장비용 환수 의견 제출 사례</span>
-            <p class="case-desc">부양하지 않겠다는 사실을 제출한 이후 지급된 급여를 환수하겠다는 통지를 받아 이에 소명을 한 사례입니다.</p>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">자세히 보기 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">2-2. 부양의무자 소명서 작성 사례</span>
-            <p class="case-desc">가족관계의 다양성과 부양의무자의 과거 조사 협조 사실 등 여러 사실관계를 종합하여 작성하고 있으므로 상황에 따라 차이가 굉장히 큰 업무입니다.</p>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">자세히 보기 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="field-panel" data-field-panel="03">
-        <p class="field-desc">체육시설업 등록·신고 절차부터 스포츠지도사 관련 행정처분 구제까지, 체육 분야 전반의 행정 업무를 지원합니다.</p>
-        <div class="case-grid-compact">
-          <div class="case-item">
-            <span class="case-name">3-1. 체육시설업 등록 및 신고 대행</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">3-2. 스포츠지도사 자격정지 처분 구제</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">자격정지 처분 취소 성공 사례 <span aria-hidden="true">↗</span></a>
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">청문 대응을 통한 처분 감경 사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">3-3. 태권도장 등 체육도장업 신고</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">3-4. 체육시설 안전관리 관련 행정처분 대응</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">시정명령 이행 및 처분 취소 사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">3-5. 국민체육진흥기금 지원사업 신청</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">3-6. 생활체육지도자 배치 관련 분쟁 대응</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="field-panel" data-field-panel="04">
-        <p class="field-desc">운전면허 취소·정지 구제부터 특별교통안전교육, 이의신청까지 도로교통법 관련 행정 절차를 신속하게 처리합니다.</p>
-        <div class="case-grid-compact">
-          <div class="case-item">
-            <span class="case-name">4-1. 음주운전 면허취소 구제</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">이의신청을 통한 면허취소 취소 사례 <span aria-hidden="true">↗</span></a>
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">생계형 운전 인정 감경 사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">4-2. 벌점 초과 면허정지 구제</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">4-3. 무면허운전 적발 행정처분 대응</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">4-4. 특별교통안전교육 이수 안내</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">4-5. 운전면허 행정처분 이의신청</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">처분 취소 성공 사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">4-6. 화물자동차 운수사업 면허 관련 처분 대응</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="field-panel" data-field-panel="05">
-        <p class="field-desc">영업정지·과징금 처분 구제부터 위생교육, 영업신고·허가까지 식품·위생 관련 행정 절차를 함께합니다.</p>
-        <div class="case-grid-compact">
-          <div class="case-item">
-            <span class="case-name">5-1. 식품위생법 위반 영업정지 처분 구제</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">과징금 전환 성공 사례 <span aria-hidden="true">↗</span></a>
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">처분 감경 성공 사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">5-2. 일반음식점 영업신고 대행</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">5-3. 위생교육 미이수 행정처분 대응</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">5-4. 청소년 주류 판매 적발 처분 구제</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">영업정지 처분 취소 사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">5-5. 공중위생관리법 위반 행정처분 대응</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">5-6. 식품제조가공업 허가 대행</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="field-panel" data-field-panel="06">
-        <p class="field-desc">행정기관의 처분이 부당하다고 판단될 때, 국가인권위원회 진정과 행정심판 청구를 통해 권리 구제를 돕습니다.</p>
-        <div class="case-grid-compact">
-          <div class="case-item">
-            <span class="case-name">6-1. 행정기관 차별행위 진정</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">6-2. 공무원 부당처우 진정 사건</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">6-3. 행정처분 취소 행정심판 청구</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">처분 취소 인용 사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">6-4. 영업정지 처분 집행정지 신청</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">집행정지 인용 성공 사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">6-5. 이의신청 기각 후 행정심판 청구</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">6-6. 인권침해 진정 및 시정권고 사례</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="field-panel" data-field-panel="07">
-        <p class="field-desc">위 분야에 속하지 않는 다양한 행정 업무도 상담을 통해 지원해 드립니다.</p>
-        <div class="case-grid-compact">
-          <div class="case-item">
-            <span class="case-name">7-1. 각종 인허가 신청 대행</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">7-2. 행정 관련 서류 작성 자문</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">7-3. 민원 이의제기 대행</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">7-4. 행정기관 소명자료 작성</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">7-5. 각종 신고 및 등록 대행</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="case-item">
-            <span class="case-name">7-6. 기타 상담 사례</span>
-            <div class="submenu-links">
-              <a href="https://blog.naver.com/TODO/TODO" class="submenu-btn" target="_blank" rel="noopener">성공사례 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      </div>
-    </section>
-
-    <section id="consult" class="admin-section">
-      <span class="page-eyebrow">CONSULTATION</span>
-      <h2 class="admin-section-title">상담신청안내</h2>
-
-      <p class="book-detail-desc"><!-- TODO -->
-        어떤 서류든, 절차가 복잡해 막막하다면 편하게 문의해주세요.
-        상황을 먼저 듣고 필요한 절차와 예상 비용을 안내해 드립니다.
-      </p>
-
-      <p class="consult-hours">전화와 상담 가능 시간을 안내해 드립니다.</p>
-
-      <ol class="consult-steps">
-        <li><span>01</span>문의 접수 — 전화로 상황을 남겨주세요.</li>
-        <li><span>02</span>일정 조율 — 서류 검토 후 상담 일정을 잡습니다.</li>
-        <li><span>03</span>상담 진행 — 절차와 비용을 구체적으로 안내합니다.</li>
-      </ol>
-
-      <div class="consult-info">
-        <!-- TODO: 실제 연락처로 교체 -->
-        <div class="consult-info-row">
-          <span class="consult-info-label">전화</span>
-          <a href="tel:0100000000" class="consult-info-value">010-0000-0000</a>
-        </div>
-        <div class="consult-info-row">
-          <span class="consult-info-label">상담 시간</span>
-          <span class="consult-info-value">평일 09:00 – 18:00</span>
-        </div>
-      </div>
-    </section>
   </main>
 
 </div>
