@@ -319,7 +319,7 @@
                 <option value="0">00분</option>
                 <option value="30">30분</option>
               </select>
-              <select id="reqDuration">
+              <select id="reqDuration" name="entry.1601401644">
                 <option value="">강의시간</option>
                 <option value="1시간">1시간</option>
                 <option value="1시간 30분">1시간 30분</option>
@@ -354,7 +354,7 @@
             <textarea id="reqEtc" name="entry.1310980513" rows="4" placeholder="기타 문의 내용을 기재해주세요."></textarea>
           </div>
 
-          <button type="submit" class="request-form-submit">섭외 문의하기</button>
+          <button type="submit" class="request-form-submit" id="requestFormSubmit">섭외 문의하기</button>
           <p class="request-form-status" id="requestFormStatus" hidden>보내드렸습니다. 확인 후 순서대로 연락드리겠습니다.</p>
         </form>
         </div>
@@ -371,6 +371,7 @@
   const requestForm = document.getElementById('requestForm');
   const statusEl = document.getElementById('requestFormStatus');
   const hiddenIframe = document.getElementById('hidden_iframe');
+  const submitBtn = document.getElementById('requestFormSubmit');
 
   if (requestForm) {
     let submitted = false;
@@ -385,12 +386,14 @@
         document.getElementById('reqDay').value = String(Number(d));
       }
       submitted = true;
+      submitBtn.disabled = true;
     });
 
     hiddenIframe.addEventListener('load', () => {
       if (submitted) {
         statusEl.hidden = false;
         requestForm.reset();
+        submitBtn.disabled = false;
       }
     });
   }
