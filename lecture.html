@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Song+Myung&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/pages.css">
+<link rel="icon" href="images/하상인.ico">
 </head>
 <body>
 
@@ -23,7 +24,12 @@
         <a href="writer.html">작가</a>
         <a href="books.html">출간도서</a>
         <div class="nav-group">
-          <a href="admin.html">행정사</a>
+          <div class="nav-group-head">
+            <a href="admin.html">행정사</a>
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-label="행정사 하위 메뉴 열기">
+              <svg class="nav-chevron" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
           <div class="nav-sub">
             <a href="admin.html">전문 업무 분야</a>
             <a href="admin.html#success">성공사례</a>
@@ -31,7 +37,12 @@
           </div>
         </div>
         <div class="nav-group">
-          <a href="lecture.html" class="is-active">강연문의</a>
+          <div class="nav-group-head">
+            <a href="lecture.html" class="is-active">강연문의</a>
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-label="강연문의 하위 메뉴 열기">
+              <svg class="nav-chevron" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
           <div class="nav-sub">
             <a href="lecture.html">강연 주제</a>
             <a href="lecture.html#history">강연 실적</a>
@@ -199,31 +210,45 @@
 
         <div class="faq-list">
           <details class="faq-item">
-            <summary class="faq-question">강연 시간이 어떻게 되나요?</summary>
+            <summary class="faq-question">강연 시간이 어떻게 되나요?
+              <svg class="faq-chevron" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
             <p class="faq-answer">기본 1시간이며, 요청에 따라 조정 가능합니다.</p>
           </details>
           <details class="faq-item">
-            <summary class="faq-question">강연료는 어떻게 되나요?</summary>
+            <summary class="faq-question">강연료는 어떻게 되나요?
+              <svg class="faq-chevron" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
             <p class="faq-answer">기관 규모와 강연 형태에 따라 다르므로 문의 시 안내드립니다.</p>
           </details>
           <details class="faq-item">
-            <summary class="faq-question">섭외 가능 지역이 어디까지인가요?</summary>
+            <summary class="faq-question">섭외 가능 지역이 어디까지인가요?
+              <svg class="faq-chevron" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
             <p class="faq-answer"><!-- TODO: 교통비 별도 여부 확인 필요 -->전국 어디든 가능합니다.</p>
           </details>
           <details class="faq-item">
-            <summary class="faq-question">섭외는 언제까지 신청해야 하나요?</summary>
+            <summary class="faq-question">섭외는 언제까지 신청해야 하나요?
+              <svg class="faq-chevron" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
             <p class="faq-answer"><!-- TODO: 실제 리드타임 확인 필요 -->최소 2주 전 신청을 권장드립니다.</p>
           </details>
           <details class="faq-item">
-            <summary class="faq-question">답변은 얼마나 걸리나요?</summary>
+            <summary class="faq-question">답변은 얼마나 걸리나요?
+              <svg class="faq-chevron" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
             <p class="faq-answer"><!-- TODO: 실제 소요 기간 확인 필요 -->영업일 기준 3일 이내 답변드립니다.</p>
           </details>
           <details class="faq-item">
-            <summary class="faq-question">자료(PPT)는 제공되나요?</summary>
+            <summary class="faq-question">자료(PPT)는 제공되나요?
+              <svg class="faq-chevron" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
             <p class="faq-answer">네, 강연 자료를 함께 제공해 드립니다.</p>
           </details>
           <details class="faq-item">
-            <summary class="faq-question">Q&amp;A 시간도 포함되나요?</summary>
+            <summary class="faq-question">Q&amp;A 시간도 포함되나요?
+              <svg class="faq-chevron" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
             <p class="faq-answer">네, 강연 후 10~15분 정도 Q&amp;A 시간을 진행합니다.</p>
           </details>
         </div>
@@ -395,6 +420,7 @@
     });
   }
 </script>
+<script src="js/nav.js"></script>
 
 </body>
 </html>

@@ -790,6 +790,15 @@ a.consult-info-value:hover{ text-decoration: underline; }
     margin: 0 auto;
   }
   .expertise-grid{ grid-template-columns: 1fr; }
+
+  .admin-section:first-of-type{ margin-top: 3rem; }
+  .admin-section + .admin-section{ margin-top: 3rem; }
+
+  .admin-section#books .pill-btn{
+    position: static;
+    display: inline-flex;
+    margin: 0 0 1.5rem;
+  }
 }
 
 /* ---------- Lecture page: photos, FAQ ---------- */
@@ -800,6 +809,7 @@ a.consult-info-value:hover{ text-decoration: underline; }
 }
 
 .lecture-hero-text{
+  width: calc(100% - 370px);
   max-width: 450px;
 }
 
@@ -820,6 +830,17 @@ a.consult-info-value:hover{ text-decoration: underline; }
   width: 100%;
   height: auto;
   display: block;
+}
+
+@media (max-width: 860px){
+  .lecture-hero{ min-height: 0; display: flex; flex-direction: column-reverse; gap: 1.5rem; }
+  .lecture-hero-text{ width: 100%; max-width: 100%; }
+  .lecture-hero-photo {
+    position: static;
+    width: 42%;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 
@@ -872,17 +893,15 @@ a.consult-info-value:hover{ text-decoration: underline; }
 }
 .faq-question::-webkit-details-marker{ display: none; }
 .faq-question::before{ content: "Q."; color: var(--accent); flex-shrink: 0; }
-.faq-question::after{
-  content: "+";
+
+.faq-chevron{
+  display: block;
   margin-left: auto;
-  padding-left: 1rem;
   flex-shrink: 0;
-  font-weight: 400;
-  font-size: 1.2rem;
   color: var(--ink-soft);
-  transition: transform .2s ease-in-out;
+  transition: transform .2s ease;
 }
-.faq-item[open] .faq-question::after{ content: "−"; }
+.faq-item[open] .faq-chevron{ color: var(--ink); transform: rotate(180deg); }
 
 .faq-answer{
   font-size: .95rem;

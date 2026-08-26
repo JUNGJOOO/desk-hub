@@ -89,10 +89,12 @@ a:focus-visible, button:focus-visible{
 .sidebar-nav{
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
   font-size: .98rem;
 }
 .sidebar-nav > a{
+  display: block;
+  height: 50px;
+  line-height: 50px;
   text-decoration: none;
   color: var(--ink-soft);
 }
@@ -101,22 +103,51 @@ a:focus-visible, button:focus-visible{
   font-weight: 700;
 }
 
-.nav-group > a{
+.nav-group{
+  cursor: pointer;
+}
+.nav-group-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  height: 50px;
+}
+.nav-group-head > a{
+  height: 50px;
+  line-height: 50px;
   text-decoration: none;
   color: var(--ink-soft);
-  display: block;
-  margin-bottom: 1rem;
 }
 .nav-group a:hover{ font-weight: 700; }
 
-.nav-sub{
+.nav-toggle{
+  background: none;
+  border: none;
+  margin: 0;
+  padding: .25rem;
+  color: var(--ink-soft);
+  cursor: pointer;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-chevron{
+  display: block;
+  transition: transform .2s ease;
+}
+.nav-group.is-open .nav-toggle{ color: var(--ink); }
+.nav-group.is-open .nav-chevron{ transform: rotate(180deg); }
+
+.nav-sub{
+  display: none;
   flex-direction: column;
   gap: .85rem;
   padding-left: 1rem;
   border-left: 1px solid var(--line);
-  margin-top: -.4rem;
+  margin-top: 5px;
 }
+.nav-group.is-open .nav-sub{ display: flex; }
 .nav-sub a{
   text-decoration: none;
   font-size: .88rem;
@@ -147,7 +178,10 @@ a:focus-visible, button:focus-visible{
   .brand{ margin-bottom: 0; }
   .sidebar-nav{ flex-direction: row; gap: 1.5rem; }
   .nav-group{ position: relative; }
-  .nav-sub{ display: none; }
+  .nav-group-head{ margin-bottom: 0; }
+  .nav-toggle{ display: none; }
+  .nav-sub,
+  .nav-group.is-open .nav-sub{ display: none; }
   .sidebar-footer{ display: none; }
 }
 
